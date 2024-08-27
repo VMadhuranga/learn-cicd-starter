@@ -34,7 +34,7 @@ func TestGetAPIKeyWithMalformedAuthHeader(t *testing.T) {
 
 func TestGetAPIKeyWithValidAuthHeader(t *testing.T) {
 	header := http.Header{}
-	header.Set("Authorization", "ApiKeyab1cd2ef3gh4ij5kl6mn7op8qr9st10uv11wx12yz13")
+	header.Set("Authorization", "ApiKey ab1cd2ef3gh4ij5kl6mn7op8qr9st10uv11wx12yz13")
 
 	apiKey, err := GetAPIKey(header)
 
